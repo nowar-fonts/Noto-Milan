@@ -1,0 +1,8 @@
+*.otd
+*.7z
+/noto/*.ttf
+!/noto/NotoSans-VF.ttf
+/milan/*.ttf
+/out/
+__pycache__/
+/GB-???/
