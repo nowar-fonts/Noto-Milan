@@ -93,7 +93,7 @@ def GenerateFilename(p):
 		"WarcraftUI": lambda region: "NowarMilanWarcraftUI-" + region,
 		"Latin": lambda region: "NotoMilanUI",
 		"Noto": lambda region: "NotoSans",
-		"Milan": lambda region: "MilanPro",
+		"Milan": lambda region: "MiLanPro",
 	}
 	return (p.encoding + "-" if p.family in [ "Sans", "UI", "WarcraftSans", "WarcraftUI" ] else "") + familyName[p.family](GetRegion(p)) + "-" + GenerateSubfamily(p).replace(" ", "")
 
@@ -256,12 +256,17 @@ if __name__ == "__main__":
 		},
 		"rule": {
 			".PHONY": {
-				"depend": [ "poster-instances" ]
+				"depend": [
+					"all",
+					"poster-instances",
+				]
 			},
 			"all": {
 				"command": [
-					"echo Noto Milan has more than 2000 flavors. Choose a specific flavor to make.",
-					"exit 1",
+					"$(warning Noto Milan has more than 2000 flavors. Choose a specific flavor to make.)",
+					"$(warning e.g.)",
+					"$(warning +       make NotoMilan-GB-450.7z -j4)",
+					"$(warning `make all` makes nothing.)",
 				]
 			},
 			"clean": {
