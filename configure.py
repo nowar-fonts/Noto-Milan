@@ -285,7 +285,7 @@ if __name__ == "__main__":
 	}
 
 	makefile["rule"]["poster-instances"] = {
-		"depend": [ "out/{}.ttf".format(GenerateFilename(GetHansFont(w, "GB"))) for w in range(125, 850 + 1, 25) ],
+		"depend": [ "out/{}.ttf".format(GenerateFilename(GetHansFont(w, "GB"))) for w in range(120, 860 + 1, 20) ],
 	}
 
 	# font pack for each regional variant and weight

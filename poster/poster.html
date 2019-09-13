@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Noto Milan Poster</title>
+	<style>
+		body {
+			font-size: 48px;
+		}
+		p {
+			margin: 6px 0 0 0;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		var body = document.body;
+		for (let weight = 120; weight < 860 + 1; weight += 20) {
+			var font = new FontFace(`Noto Milan W${weight}`, `url(../out/gbk-NotoMilanWarcraft-GB-W${weight}.ttf)`);
+			font.load().then(function(loaded){
+				document.fonts.add(loaded)
+			}).catch (function(error){
+				console.log("failed to load " + `url(../out/gbk-NotoMilanWarcraft-GB-W${weight}.ttf)`)
+			});
+
+			var para = document.createElement("p");
+			para.style.fontFamily = `Noto Milan W${weight}`;
+			para.innerText = `永和九年，歲在癸丑。Noto Sans W${weight} + 小米兰亭`;
+			body.appendChild(para);
+		}
+	</script>
+</body>
+
+</html>
