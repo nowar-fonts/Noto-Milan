@@ -12,7 +12,7 @@ Noto Milan has many pre-defined weights and 3 regional variants.
 
 ### Weights
 
-Noto Milan defined 745 weights: all integers from 116 (included) to 850 (included) are valid weights.
+Noto Milan defined 745 weights: all integers from 116 (included) to 860 (included) are valid weights.
 
 Non-integer weights can be built by customizing `configure.py # class Config # fontPackWeight`.
 (See below # How To Build.)
