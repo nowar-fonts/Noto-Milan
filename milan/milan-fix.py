@@ -1,4 +1,6 @@
-# works on Mi Lan Pro VF Version 1.10, sha1sum = 7c489c6291067561733b20d2237963d6d36406d8
+# works on
+#   MI Lan Pro VF Version 1.10, sha1sum = 7c489c6291067561733b20d2237963d6d36406d8
+#   MI Lan Pro VF Version 1.20, sha1sum = 8dd5f494afc2430468256f7f78b0e9424b1891be
 
 from fontTools.ttLib import TTFont, newTable
 from fontTools.varLib.varStore import VarStoreInstancer
@@ -14,7 +16,7 @@ font = TTFont(infile)
 
 gvar_raw = bytearray(font.getTableData('gvar'))
 
-glyphCount = len(font['hmtx'].metrics)
+glyphCount = font['maxp'].numGlyphs
 
 gvar_raw[12] = glyphCount // 256
 gvar_raw[13] = glyphCount % 256
@@ -23,8 +25,6 @@ gvar_ = newTable('gvar')
 gvar_.decompile(bytes(gvar_raw), font)
 
 # fix phantom points in gvar
-
-fvar_ = font['fvar']
 
 hvar_ = font['HVAR']
 

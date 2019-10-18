@@ -48,9 +48,9 @@ RP is a special offer for Chinese RP realms. The RP distributions aim at unified
 
 Note: choose 64-bit version if possible. 32-bit version may lead to out-of-memory issue.
 
-### Get 小米兰亭 Pro VF (Mi Lan Pro VF)
+### Get 小米兰亭 Pro VF (MI Lan Pro VF)
 
-小米兰亭 Pro VF is bundled in recent MIUI dev channel pre-11 releases.
+小米兰亭 Pro VF is bundled in MIUI 11 releases.
 
 With a Xiaomi phone, you can upgrade to such release, and simply run
 ```bash
@@ -78,5 +78,5 @@ make NotoMilan-OSF-450.7z -j6
 ## Note
 
 * [Noto Sans VF](https://github.com/googlefonts/noto-fonts/tree/master/phaseIII_only/unhinted/variable-ttf) is the variable version of [Noto Sans](https://github.com/googlei18n/noto-fonts) by Google. It is still under development, and may receive major changes.
-* 小米兰亭 Pro VF will be the next generation system-wide font in MIUI. It is produced by [方正字库](https://www.foundertype.com/) and published by Xiaomi.
+* 小米兰亭 Pro VF is the system-wide font in MIUI 11 China. It is produced by [方正字库](https://www.foundertype.com/) and published by Xiaomi.
 * Noto Milan fonts, and WoW font packs, are for personal non-commercial use only. Do not distribute these font softwares.
