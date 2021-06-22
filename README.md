@@ -1,4 +1,8 @@
-# Noto Milan — Nowar’s VF Experimentation
+# Archived
+
+This has been merged to [Nowar Sans](https://github.com/nowar-fonts/Nowar-Sans), which is now built from variable OTFs.
+
+# Noto Milan (VF Experimentation)
 
 Build WoW Font Packs from OpenType Variable Font.
 
